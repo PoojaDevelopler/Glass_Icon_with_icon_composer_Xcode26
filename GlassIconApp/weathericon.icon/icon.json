@@ -3,7 +3,7 @@
     {
       "value" : {
         "linear-gradient" : [
-          "display-p3:0.26659,0.87833,0.52917,1.00000",
+          "display-p3:0.87833,0.75961,0.77295,1.00000",
           "display-p3:0.79669,0.41555,0.76114,1.00000"
         ]
       }
@@ -109,16 +109,35 @@
           }
         }
       ],
-      "lighting" : "individual",
+      "lighting-specializations" : [
+        {
+          "value" : "individual"
+        },
+        {
+          "appearance" : "tinted",
+          "value" : "individual"
+        }
+      ],
       "shadow" : {
         "kind" : "layer-color",
         "opacity" : 1
       },
       "specular" : true,
-      "translucency" : {
-        "enabled" : true,
-        "value" : 0.76
-      }
+      "translucency-specializations" : [
+        {
+          "value" : {
+            "enabled" : true,
+            "value" : 0.76
+          }
+        },
+        {
+          "appearance" : "tinted",
+          "value" : {
+            "enabled" : true,
+            "value" : 0.3
+          }
+        }
+      ]
     }
   ],
   "supported-platforms" : {
